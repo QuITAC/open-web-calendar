@@ -1,0 +1,11 @@
+version: '3'
+services:
+  open-web-calendar:
+    image: open-web-calendar
+    build: .
+    ports:
+      - '80:80'
+    environment:
+      - ALLOWED_HOSTS=calender.queerreferat.ac
+      - APP_DEBUG=False
+    restart: unless-stopped
