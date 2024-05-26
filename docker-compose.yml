@@ -5,7 +5,6 @@ services:
     ports:
       - '8080:80'
     environment:
-      - ALLOWED_HOSTS=owc.queerreferat-aachen.de
       - APP_DEBUG=False
     restart: unless-stopped
     networks:
