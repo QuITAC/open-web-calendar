@@ -9,3 +9,9 @@ services:
       - ALLOWED_HOSTS=owc.queerreferat-aachen.de
       - APP_DEBUG=False
     restart: unless-stopped
+    networks:
+      - owc
+
+networks:
+  owc:
+    driver: bridge
