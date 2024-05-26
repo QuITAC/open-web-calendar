@@ -1,4 +1,3 @@
-version: '3'
 services:
   open-web-calendar:
     image: open-web-calendar
