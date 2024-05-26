@@ -4,8 +4,8 @@ services:
     image: open-web-calendar
     build: .
     ports:
-      - '80:80'
+      - '8080:80'
     environment:
-      - ALLOWED_HOSTS=calender.queerreferat.ac
+      - ALLOWED_HOSTS=owc.queerreferat-aachen.de
       - APP_DEBUG=False
     restart: unless-stopped
