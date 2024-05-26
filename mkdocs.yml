@@ -122,6 +122,12 @@ plugins:
         - site_description
 #        - copyright
 #      min_translated_messages: 50%
+      exclude:
+        - docs/changelog.md
+        - docs/dev/translate.md
+        - docs/dev/maintain.md
+        - docs/dunno.md
+        - docs/news/*
 
   # git revision, see https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/#document-dates
 #  - git-revision-date-localized:
@@ -180,12 +186,14 @@ nav:
   - templates.md
   - contributing.md
   - News:
+    - news/social-media.md
     - news/2024-04-10-website.md
   - Hosting:
     - host/hosted.md
     - host/self.md
     - host/docker.md
   - Development:
+    - dev/translate.md
     - dev/index.md
     - dev/api.md
     - dev/maintain.md
@@ -225,12 +233,3 @@ markdown_extensions:
   - pymdownx.snippets: # see https://facelessuser.github.io/pymdown-extensions/extensions/snippets/
       base_path: ["docs/snippets"]
   - attr_list # see https://mrkeo.github.io/reference/images/
-
-#extra_css:
-#  - css/code-blocks.css
-#extra_javascript:
-#  - js/popper.js
-#  - js/jquery-3.7.1.min.js
-#  - js/tippy.js
-#  - js/clipboard.min.js
-#  - js/code-blocks.js
