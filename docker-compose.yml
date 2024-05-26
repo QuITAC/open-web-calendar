@@ -9,8 +9,8 @@ services:
       - APP_DEBUG=False
     restart: unless-stopped
     networks:
-      - owc
+      - static-site_default
 
 networks:
-  owc:
-    driver: bridge
+  static-site_default:
+    external: true
